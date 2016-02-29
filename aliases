@@ -1,0 +1,18 @@
+# use these aliases for your favorite shell
+# mount on /Users is for absolute paths within my home directory
+# mount in /wd is for relative paths within the current working directory
+# note: I'm on osx, you'll maybe want to change /Users
+
+docker_prefix="docker run --rm -it -v /Users:/Users -v $(pwd):/wd -w /wd konjak/php"
+alias php="$docker_prefix php $@"
+alias composer="$docker_prefix composer $@"
+alias phpmd="$docker_prefix phpmd $@"
+alias phpcs="$docker_prefix phpcs $@"
+alias phpcbf="$docker_prefix phpcbf $@"
+alias phploc="$docker_prefix phploc $@"
+alias pdepend="$docker_prefix pdepend $@"
+alias phpcpd="$docker_prefix phpcpd $@"
+alias phpmetrics="$docker_prefix phpmetrics $@"
+alias phpdox="$docker_prefix phpdox $@"
+alias phpunit="$docker_prefix phpunit $@"
+alias codecept="$docker_prefix codecept $@"
