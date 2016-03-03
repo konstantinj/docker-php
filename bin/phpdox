@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+source _docker-env
+eval $docker_prefix $(basename $0) "$@"

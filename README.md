@@ -35,6 +35,11 @@ See /install/\* and /run/\* for more info :-)
 - nginx conf: /etc/nginx/conf.d
 - document root: /usr/share/nginx/html (only mount /usr/share/nginx)
 
+## Usage from host
+You can either use the provided aliases to use plain commands from your host or the provided bin/files. In case you use the bin/files you have to add the bin directory to $PATH or move the files to one of your bin directories.
+When using the bin/files you can use this image e.g. with PHPStorm like described here: http://obrown.io/2015/12/23/phpunit-docker-phpstorm.html
+Note: When using docker toolbox there is only the /Users directory mounted in the VM. When you need more directories you have to add them manually like described here: http://stackoverflow.com/questions/30040708/how-to-mount-local-volumes-in-docker-machine
+
 ## TODO
 - php-fpm starts but can't be killed with CTRL+C
 - still a lot compile-warnings; can't be good but seems to work
