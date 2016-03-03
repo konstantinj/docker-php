@@ -16,6 +16,4 @@ mkdir /info
 /install/php-redis.sh
 /install/php-couchbase.sh
 /install/php-phalcon.sh
-/install/php-extensions-ini.sh
-/install/php-qatools.sh
 /install/post-install.sh

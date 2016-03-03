@@ -1,2 +1,2 @@
-phpfpm: php-fpm
+phpfpm: php-fpm -c /usr/local/php/etc/php-no-pthreads.ini
 nginx: nginx
